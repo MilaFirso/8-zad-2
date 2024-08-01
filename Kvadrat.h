@@ -4,12 +4,12 @@
 #include <string>
 #include "MyException.h"
 
-//Класс квадрат
+//ГЉГ«Г Г±Г± ГЄГўГ Г¤Г°Г ГІ
 class Kvadrat :public Pryamoyg
 {
 protected:
 
-	std::string name = "Квадрат:";
+	std::string name = "ГЉГўГ Г¤Г°Г ГІ:";
 
 public:
 	Kvadrat()
@@ -27,15 +27,15 @@ public:
 		this->B = B;
 		this->C = C;
 		this->D = D;
-		this->name = "Квадрат:";
+		this->name = "ГЉГўГ Г¤Г°Г ГІ:";
 
-		if ((a != b) && (c != d))
+		if (a != b || b != c || c != d)
 		{
-			throw MyException("Ошибка создания фигуры. Причина: стороны не равны");
+			throw MyException("РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ С„РёРіСѓСЂС‹. РџСЂРёС‡РёРЅР°: СЃС‚РѕСЂРѕРЅС‹ РЅРµ СЂР°РІРЅС‹");
 		}
-		if (A != B != C != D != 90)
+		if (A != 90 || B != 90 || C != 90 || D != 90)
 		{
-			throw MyException("Ошибка создания фигуры. Причина: углы не равны 90");
+			throw MyException("РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ С„РёРіСѓСЂС‹. РџСЂРёС‡РёРЅР°: СѓРіР»С‹ РЅРµ СЂР°РІРЅС‹ 90");
 		}
 	}
 	void print_info() override;
