@@ -4,7 +4,7 @@
 #include <string>
 #include "MyException.h"
 
-//Класс прямоугольник
+//ГЉГ«Г Г±Г± ГЇГ°ГїГ¬Г®ГіГЈГ®Г«ГјГ­ГЁГЄ
 class Pryamoyg :public Figura
 {
 protected:
@@ -16,7 +16,7 @@ protected:
 	int B = 90;
 	int C = 90;
 	int D = 90;
-	std::string name = "Прямоугольник:";
+	std::string name = "ГЏГ°ГїГ¬Г®ГіГЈГ®Г«ГјГ­ГЁГЄ:";
 
 public:
 	Pryamoyg()
@@ -33,15 +33,15 @@ public:
 		this->B = B;
 		this->C = C;
 		this->D = D;
-		this->name = "Прямоугольник:";
+		this->name = "ГЏГ°ГїГ¬Г®ГіГЈГ®Г«ГјГ­ГЁГЄ:";
 
 		if ((a != c) || (b != d))
 		{
-			throw MyException("Ошибка создания фигуры. Причина: стороны попарно не равны");
+			throw MyException("РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ С„РёРіСѓСЂС‹. РџСЂРёС‡РёРЅР°: СЃС‚РѕСЂРѕРЅС‹ РїРѕРїР°СЂРЅРѕ РЅРµ СЂР°РІРЅС‹");
 		}
-		if (A != C != B != D != 90)
+		if (A != 90 || B != 90 || C != 90 || D != 90)
 		{
-			throw MyException("Ошибка создания фигуры. Причина: углы не равны 90");
+			throw MyException("РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ С„РёРіСѓСЂС‹. РџСЂРёС‡РёРЅР°: СѓРіР»С‹ РЅРµ СЂР°РІРЅС‹ 90");
 		}
 	}
 	void print_info() override;
