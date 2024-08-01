@@ -26,7 +26,7 @@ int main()
 	system("chcp 1251");
 
 	try {
-		Treug treug;
+		Treug treug(10,20,30,40,50,60);
 		print_info(&treug);
 		std::cout << "Создан" << std::endl;
 	}
@@ -38,7 +38,7 @@ int main()
 
 	try
 	{
-		Treug_pryamoyg treug_pryamoyg;
+		Treug_pryamoyg treug_pryamoyg(10, 20, 30, 40, 50, 60);
 		print_info(&treug_pryamoyg);
 		std::cout << "Создан" << std::endl;
 
@@ -50,7 +50,7 @@ int main()
 	}
 	try
 	{
-		Treug_ravnobed treug_ravnobed;
+		Treug_ravnobed treug_ravnobed(10, 20, 30, 40, 50, 60);
 		print_info(&treug_ravnobed);
 		std::cout << "Создан" << std::endl;
 	}
@@ -62,7 +62,7 @@ int main()
 
 	try
 	{
-		Treug_ravnostor treug_ravnostor;
+		Treug_ravnostor treug_ravnostor(10, 20, 30, 40, 50, 60);
 		print_info(&treug_ravnostor);
 		std::cout << "Создан" << std::endl;
 	}
@@ -73,7 +73,7 @@ int main()
 	}
 	try
 	{
-		Cheterexyg сheterexyg;
+		Cheterexyg сheterexyg(10,20,30,40,90,90,90,90);
 		print_info(&сheterexyg);
 		std::cout << "Создан" << std::endl;
 	}
@@ -84,7 +84,7 @@ int main()
 	}
 	try
 	{
-		Pryamoyg pryamoyg;
+		Pryamoyg pryamoyg(10, 20, 30, 40, 90, 90, 90, 90);
 		print_info(&pryamoyg);
 		std::cout << "Создан" << std::endl;
 	}
@@ -95,7 +95,7 @@ int main()
 	}
 	try
 	{
-		Kvadrat kvadrat;
+		Kvadrat kvadrat(20,20,20,30,90,90,90,90);
 		print_info(&kvadrat);
 		std::cout << "Создан" << std::endl;
 	}
@@ -107,7 +107,7 @@ int main()
 
 	try
 	{
-		Parallelog parallelog;
+		Parallelog parallelog(10, 20, 30, 40, 90, 90, 90, 90);
 		print_info(&parallelog);
 		std::cout << "Создан" << std::endl;
 	}
@@ -119,7 +119,7 @@ int main()
 
 	try
 	{
-		Romb romb;
+		Romb romb(10, 20, 30, 40, 90, 90, 90, 90);
 		print_info(&romb);
 		std::cout << "Создан" << std::endl;
 	}
@@ -133,3 +133,4 @@ int main()
 	return 0;
 
 }
+
