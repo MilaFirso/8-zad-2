@@ -4,12 +4,12 @@
 #include <string>
 #include "MyException.h"
 
-//Класс ромб
+//РљР»Р°СЃСЃ СЂРѕРјР±
 class Romb :public Parallelog
 {
 protected:
 
-	std::string name = "Ромб:";
+	std::string name = "Р РѕРјР±:";
 
 public:
 	Romb()
@@ -27,15 +27,15 @@ public:
 		this->B = B;
 		this->C = C;
 		this->D = D;
-		this->name = "Ромб:";
+		this->name = "Р РѕРјР±:";
 
-		if (a != c != b != d)
+		if (a != b || b != c || c != d)
 		{
-			throw MyException("Ошибка создания фигуры. Причина: стороны не равны");
+			throw MyException("РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ С„РёРіСѓСЂС‹. РџСЂРёС‡РёРЅР°: СЃС‚РѕСЂРѕРЅС‹ РЅРµ СЂР°РІРЅС‹");
 		}
 		if ((A != C) || (B != D))
 		{
-			throw MyException("Ошибка создания фигуры. Причина: углы попарно не равны");
+			throw MyException("РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ С„РёРіСѓСЂС‹. РџСЂРёС‡РёРЅР°: СѓРіР»С‹ РїРѕРїР°СЂРЅРѕ РЅРµ СЂР°РІРЅС‹");
 		}
 	}
 	void print_info() override;
